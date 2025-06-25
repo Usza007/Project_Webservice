@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+    font-family: "Noto Sans Thai", sans-serif;
+    background-color: #f5f9ff;
+    border-radius: 12px;
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .header {
+    font-size: 28px;
+    font-weight: 600;
+    color: #0a3977;
+    margin: 0;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+  
+  .back-button {
+    padding: 10px 18px;
+    background-color: #fff;
+    color: #0a3977;
+    border: 2px solid #0a3977;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+  }
+  
+  .form-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 3px 10px rgba(0, 60, 160, 0.08);
+    margin-bottom: 24px;
+  }
+  
+  .form {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #e2eeff;
+    font-size: 16px;
+  }
+  
+  .add-button {
+    font-family: "Noto Sans Thai", sans-serif;
+    padding: 12px 20px;
+    background-color: #0a3977;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .message {
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+  }
+  
+  .message.success {
+    background-color: #e6ffef;
+    color: #2e7d32;
+    border: 1px solid #b9f6ca;
+  }
+  
+  .message.error {
+    background-color: #ffebee;
+    color: #d32f2f;
+    border: 1px solid #ffcdd2;
+  }
+  
+  .loading-container {
+    text-align: center;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 60, 160, 0.08);
+    margin-bottom: 24px;
+  }
+  
+  .loading-indicator {
+    border: 4px solid #f1f5ff;
+    border-top: 4px solid #0a3977;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 16px auto;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading-text {
+    font-family: "Noto Sans Thai", sans-serif;
+    color: #5681b3;
+    font-size: 16px;
+  }
+  
+  .websites-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 3px 10px rgba(0, 60, 160, 0.08);
+    margin-bottom: 24px;
+  }
+  
+  .website-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid #e2eeff;
+  }
+  
+  .website-info {
+    flex: 1;
+  }
+  
+  .website-url {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0a3977;
+  }
+  
+  .website-created-at {
+    font-family: "Noto Sans Thai", sans-serif;
+    font-size: 14px;
+    color: #5681b3;
+    margin-top: 4px;
+  }
+  
+  .delete-button {
+    font-family: "Noto Sans Thai", sans-serif;
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .no-data-text {
+    font-style: italic;
+    color: #5681b3;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .form input {
+    font-family: "Noto Sans Thai", sans-serif;
+  }
+  

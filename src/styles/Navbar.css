@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&family=PT+Serif:wght@700&display=swap');
+
+.navbar-container {
+    background-color: #0a3977;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    max-width: 1440px;
+    background-color: #0a3977;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 32px;
+    margin: auto;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo-icon {
+    margin-right: 8px;
+    font-size: 28px;
+}
+
+.logo-text {
+    font-family: "Inria Sans", sans-serif;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-links .navbar-link {
+    font-family: "Inria Sans", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.2s;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+.navbar-links .navbar-link:hover {
+    color: rgb(196, 219, 252);
+}
+
+.navbar-signout {
+    font-family: "Inria Sans", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.2s;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+.navbar-signout:hover {
+    color: rgb(255, 73, 73);
+}

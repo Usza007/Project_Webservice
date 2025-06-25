@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+
+.container {
+    padding: 32px;
+    max-width: 1440px;
+    margin: auto;
+    font-family: "Prompt", "Kanit", sans-serif;
+    color: #333;
+    background-color: #f5f8ff;
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.header {
+    font-family: "Noto Sans Thai", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #0a3977;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.back-button {
+    font-family: "Noto Sans Thai", sans-serif;
+    padding: 10px 18px;
+    background-color: #fff;
+    color: #0a3977;
+    border: 2px solid #0a3977;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.error {
+    color: #e53935;
+    background-color: #ffebee;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    border: 1px solid #ffcdd2;
+    font-weight: 500;
+}
+
+.category-container {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 60, 160, 0.08);
+    margin-bottom: 24px;
+    border: 1px solid rgba(0, 90, 200, 0.1);
+    overflow-x: auto;
+}
+
+.category-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category-button {
+    font-family: "Noto Sans Thai", sans-serif;
+    padding: 8px 16px;
+    background-color: #f1f5ff;
+    color: #0a3977;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.category-button.active {
+    background-color: #0a3977;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(10, 57, 119, 0.3);
+}
+
+.loading-container {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 60, 160, 0.08);
+    border: 1px solid rgba(0, 90, 200, 0.1);
+}
+
+.loading-indicator {
+    border: 4px solid #f1f5ff;
+    border-top: 4px solid #0a3977;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 16px auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-text {
+    color: #5681b3;
+    font-size: 16px;
+}
+
+.card-container {
+    font-family: "Noto Sans Thai", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 60, 160, 0.08);
+    border: 1px solid rgba(0, 90, 200, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.insurance-name {
+    font-family: "Noto Sans Thai", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0a3977;
+    margin: 0;
+    flex: 1;
+}
+
+.company-pill {
+    background-color: #e7efff;
+    color: #0a3977;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.card-category {
+    color: #5681b3;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.price {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: baseline;
+}
+
+.price-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0a3977;
+}
+
+.price-label {
+    font-size: 14px;
+    color: #5681b3;
+    margin-left: 4px;
+}
+
+.view-button {
+    font-family: "Noto Sans Thai", sans-serif;
+    padding: 12px 0;
+    background-color: #0a3977;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: auto;
+    transition: all 0.2s;
+    width: 100%;
+}
+
+.no-data-container {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 60, 160, 0.08);
+    border: 1px solid rgba(0, 90, 200, 0.1);
+}
+
+.no-data-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.no-data-text {
+    color: #5681b3;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.reset-filter-button {
+    padding: 10px 20px;
+    background-color: #0a3977;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.chart-title {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.json-toggle {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.json-button {
+    padding: 0.75rem 1rem;
+    margin-bottom: 16px;
+    background-color: #0a3977;
+    border: #0a3977;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.json-button:hover {
+    background-color: #0056b3;
+}
+
+.json-output {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    max-height: 400px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.json-toggle-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+    padding-right: 1rem;
+}
+
+
+.button-row {
+    display: flex;
+    gap: 12px;
+    margin-top: auto;
+}
+
+.button-row .view-button,
+.button-row .copy-button {
+    flex: 1;
+    padding: 12px 0;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: "Noto Sans Thai", sans-serif;
+    margin-top: 0; /* แก้ให้ไม่มี margin-top ต่างกัน */
+}
+
+.button-row .view-button {
+    background-color: #0a3977;
+    color: #fff;
+    border: none;
+}
+
+.button-row .view-button:hover {
+    background-color: #062c5e;
+}
+
+.button-row .copy-button {
+    background-color: #e7efff;
+    color: #0a3977;
+    border: 2px solid #0a3977;
+}
+
+.button-row .copy-button:hover {
+    background-color: #d4e6ff;
+}

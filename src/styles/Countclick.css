@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+
+.countclick-container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.countclick-error {
+  color: red;
+  margin-bottom: 16px;
+}
+
+.countclick-header p{
+    font-family: "Noto Sans Thai", sans-serif;
+    font-size: 1.5rem;
+    color: #555;
+  }
+
+.dashboard-total-click-box {
+  border-radius: 20px;
+  padding: 16px;
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-top: 12px;
+}
+
+.dashboard-total-click-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.dashboard-total-click-label {
+  font-family: "Noto Sans Thai", sans-serif;
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.dashboard-total-click-number {
+  font-family: "Noto Sans Thai", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 4px 0;
+}
+
+.bar-chart-box {
+  margin-top: 32px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 20px; /* ปรับจาก 12px ให้เหมือน popular */
+  padding: 16px ;
+  box-shadow: 0 3px 10px rgba(0, 60, 160, 0.08); /* ใช้เงาเดียวกัน */
+}
+
+.bar-chart-title {
+  font-family: "Noto Sans Thai", sans-serif;
+  font-size: 20px; /* ขนาดเท่ากัน */
+  font-weight: 600;
+  color: #0a3977;
+  margin-bottom: 16px;
+  text-align: left;
+  border-bottom: 2px solid #e2eeff;
+  padding-bottom: 10px;
+}
+
+.countclick-title p {
+  font-family: "Noto Sans Thai", sans-serif;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.countclick-content-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto; /* จัดกลาง */
+}

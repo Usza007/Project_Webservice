@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+
+.home-container {
+  max-width: 1440px;
+  background-color: #f5f9ff;
+  font-family: 'Prompt', sans-serif;
+  min-height: 100vh; 
+  margin: auto;
+  /* padding: 100px 20px;  */
+  padding-top: 100px; 
+}
+
+
+.home-loading,
+.home-logging-in {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.home-error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home-hero {
+  font-family: "Noto Sans Thai", sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.home-hero h1 {
+  font-family: "Noto Sans Thai", sans-serif;
+  font-size: 2.4rem;
+  color: #0a3977;
+  margin-bottom: 10px;
+}
+
+.home-hero p {
+  font-family: "Noto Sans Thai", sans-serif;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.home-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.home-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.home-card h2 {
+  font-family: "Noto Sans Thai", sans-serif;
+  color: #0a3977;
+  margin-bottom: 12px;
+}
+
+.home-card p {
+  font-family: "Noto Sans Thai", sans-serif;
+  color: #555;
+  font-size: 1rem;
+}
